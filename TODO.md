@@ -1,0 +1,8 @@
+- Add apple icon __TODO__ [app/index.html](app/index.html)
+- Add icon __TODO__ [app/index.html](app/index.html)
+- Add OpenGraph image __TODO__ [app/index.html](app/index.html)
+- Add stylesheet __TODO__ [app/index.html](app/index.html)
+- Add tile image __TODO__ [app/index.html](app/index.html)
+- Add twitter account __TODO__ [app/index.html](app/index.html)
+- Add twitter image __TODO__ [app/index.html](app/index.html)
+- Chose theme color __TODO__ [app/index.html](app/index.html)
