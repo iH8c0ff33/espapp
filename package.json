@@ -1,6 +1,6 @@
 {
   "name": "ESPApp",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "My App Description",
   "main": "gulpfile.js",
   "scripts": {
