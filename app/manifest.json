@@ -1,0 +1,12 @@
+{
+    "name": "ESPApp",
+    "short_name": "ESPApp",
+    "icons": [{
+        "src": "",
+        "type": "image/png",
+        "sizes": "128x128"
+    }],
+    "start_url": "/?homescreen=1",
+    "display": "standalone",
+    "background_color": "#FFFFFF"
+}
