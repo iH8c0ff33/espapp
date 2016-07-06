@@ -4,6 +4,7 @@ let gulp = require('gulp');
 let $ = require('gulp-load-plugins')();
 let uglify = require('uglify-js-harmony');
 let csso = require('csso');
+let fs = require('fs');
 
 gulp.task('copy', function () {
     gulp.src([
@@ -23,8 +24,8 @@ gulp.task('html', ['copy'], function () {
         .pipe($.replace(/<script src="([^\.]*\.js)"[^>]*>[^<]*<\/script>/g, (s, file) => {
             return '<script>' + uglify.minify('app' + file).code + '</script>';
         }))
-        .pipe($.replace(/<style src="([^\.]*\.css)"[^>]*>[^<]*<\/style>/g, (s, file) => {
-            return '<style>' + csso.minify('app' + file).css + '</style>';
+        .pipe($.replace(/<link rel="stylesheet" href="([^\.]*\.css)"[^>]*>/g, (s, file) => {
+            return '<style>' + csso.minify(fs.readFileSync('app' + file, 'utf8')).css + '</style>';
         }))
         .pipe($.htmlmin({
             collapseWhitespace: true,
